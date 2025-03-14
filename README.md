@@ -1,33 +1,48 @@
-# dio-resumos-git-e-github
-# Aula 01
-## Guia Básico do Git para Repositórios
+
+# Guia Completo de Uso do Git
+
+Este guia aborda os conceitos básicos do Git e como usar repositórios locais e remotos no GitHub de forma simples e prática.
+
+---
 
 ## 1. Instalando o Git
-![image](https://github.com/user-attachments/assets/4fb7feca-fd5b-4a8f-9c66-c3ad9e079efa)### **Windows**
-1. Baixe o instalador em: [git-scm.com](https://git-scm.com/)
-2. Instale com as opções padrões.
-3. Abra o **Git Bash**.
 
+### **Windows**
+1. Acesse [git-scm.com](https://git-scm.com/) e baixe o instalador.
+2. Execute o instalador e aceite as opções padrão.
+3. Após a instalação, abra o Git Bash para usar o Git.
 
-![image](https://github.com/user-attachments/assets/7e908e9b-74cb-480f-a1bc-2769e11931f2)### **Linux (Debian/Ubuntu)**
-```sh
-sudo apt update
-sudo apt install git
-```
+### **Linux (Debian/Ubuntu)**
+1. Abra o terminal e execute os seguintes comandos:
+
+    ```sh
+    sudo apt update
+    sudo apt install git
+    ```
 
 ### **MacOS**
-```sh
-brew install git
-```
+1. Se você usa o **Homebrew**, execute:
+
+    ```sh
+    brew install git
+    ```
+
+---
 
 ## 2. Configurando o Git
+
+Para configurar seu nome de usuário e e-mail globalmente, execute os seguintes comandos. Esses dados serão usados em todos os seus commits:
 
 ```sh
 git config --global user.name "Seu Nome"
 git config --global user.email "seuemail@example.com"
 ```
 
+---
+
 ## 3. Criando um Novo Repositório
+
+Para criar um repositório local, execute os seguintes comandos:
 
 ```sh
 mkdir meu-projeto
@@ -35,10 +50,13 @@ cd meu-projeto
 git init
 ```
 
-**Imagem 1**: Criando um repositório localmente.
-(Imagine um terminal com os comandos acima sendo digitados.)
+Isso criará um novo repositório Git vazio na pasta `meu-projeto`.
+
+---
 
 ## 4. Adicionando Arquivos ao Repositório
+
+Crie um arquivo de exemplo e adicione ao repositório com os seguintes comandos:
 
 ```sh
 echo "# Meu Projeto" > README.md
@@ -46,61 +64,73 @@ git add README.md
 git commit -m "Primeiro commit"
 ```
 
-**Imagem 2**: Adicionando um arquivo ao Git.
-(Imagine o comando `git status` mostrando que `README.md` foi adicionado.)
+---
 
 ## 5. Conectando ao GitHub
 
-### **Criar um repositório no GitHub**
-1. Acesse [GitHub](https://github.com/) e faça login.
-2. Clique em **New Repository**.
-3. Dê um nome e clique em **Create Repository**.
+### **Criando um Repositório no GitHub**
+1. Acesse o [GitHub](https://github.com/) e faça login.
+2. Crie um novo repositório clicando em **New Repository**.
+3. Dê um nome ao repositório e clique em **Create Repository**.
 
-**Imagem 3**: Tela de criação de repositório no GitHub.
+### **Vinculando o Repositório Local ao Remoto**
+Após criar o repositório no GitHub, conecte seu repositório local ao remoto com os seguintes comandos:
 
-### **Vincular o repositório local ao remoto**
 ```sh
 git remote add origin https://github.com/seu-usuario/meu-projeto.git
 git branch -M main
 git push -u origin main
 ```
 
-**Imagem 4**: Terminal mostrando o push para o repositório remoto.
+---
 
 ## 6. Clonando um Repositório
+
+Para clonar um repositório remoto para sua máquina local, execute:
 
 ```sh
 git clone https://github.com/seu-usuario/meu-projeto.git
 ```
 
-**Imagem 5**: Clonando um repositório para sua máquina.
+---
 
 ## 7. Fluxo Básico de Uso
 
-1. **Modificar arquivos**
-2. **Adicionar ao Git**: `git add .`
-3. **Criar commit**: `git commit -m "Mensagem do commit"`
-4. **Enviar para o GitHub**: `git push origin main`
+1. Modifique os arquivos conforme necessário.
+2. Adicione as mudanças ao Git:
 
-**Imagem 6**: Exemplo de workflow no Git.
+    ```sh
+    git add .
+    ```
+
+3. Crie um commit com uma mensagem descritiva:
+
+    ```sh
+    git commit -m "Descrição do que foi feito"
+    ```
+
+4. Envie as mudanças para o repositório remoto no GitHub:
+
+    ```sh
+    git push origin main
+    ```
+
+---
 
 ## 8. Verificando o Status
+
+Para verificar o status do seu repositório e ver quais arquivos foram modificados, use o comando:
 
 ```sh
 git status
 ```
 
-**Imagem 7**: Terminal mostrando `git status` com arquivos modificados.
+---
 
 ## 9. Atualizando o Repositório Local
+
+Para garantir que seu repositório local esteja atualizado com as últimas mudanças do repositório remoto, execute:
 
 ```sh
 git pull origin main
 ```
-
-**Imagem 8**: Atualizando o código local com o remoto.
-
----
-
-Com esses passos, você pode gerenciar repositórios no Git e no GitHub com facilidade! 🚀
-
