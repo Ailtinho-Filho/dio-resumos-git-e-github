@@ -3,13 +3,13 @@
 ## Guia Básico do Git para Repositórios
 
 ## 1. Instalando o Git
-
-### **Windows**
+![image](https://github.com/user-attachments/assets/4fb7feca-fd5b-4a8f-9c66-c3ad9e079efa)### **Windows**
 1. Baixe o instalador em: [git-scm.com](https://git-scm.com/)
 2. Instale com as opções padrões.
 3. Abra o **Git Bash**.
 
-### **Linux (Debian/Ubuntu)**
+
+![image](https://github.com/user-attachments/assets/7e908e9b-74cb-480f-a1bc-2769e11931f2)### **Linux (Debian/Ubuntu)**
 ```sh
 sudo apt update
 sudo apt install git
