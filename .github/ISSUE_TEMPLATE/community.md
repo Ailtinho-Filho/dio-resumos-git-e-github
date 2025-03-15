@@ -7,6 +7,6 @@ assignees: Ailtinho-Filho
 
 ---
 
-*Caso tenha alguma sugestã, Por favor descreva como a fez
+*Caso tenha alguma sugestão, Por favor descreva como a fez
 *Links Uteis*
 -[Nome] (link/URL)
