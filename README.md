@@ -139,6 +139,7 @@ Ailton Rodrigo
 [utilize de base o repo do  Armstrong Lohãns](https://gist.github.com/lohhans/f8da0b147550df3f96914d3797e9fb89)
 
 [github dock](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 [Guia do uso do Git](https://www.notion.so/Guia-do-uso-do-Git-1c5e97a9d597806e8a6dfe3ff25a3f38)
 Esse Notion contém o mesmo conteúdo desse repo e com vídeos adicionais do tema
 
